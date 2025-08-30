@@ -161,15 +161,16 @@
     </div>
   </section>
 
-  <!-- 用户评价 -->
+  <!-- 用户评价
   <section id="reviews" class="bg-gray-50 py-16">
     <div class="max-w-7xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-10" data-i18n="feedback">用户评价</h2>
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="p-6 bg-white shadow rounded-lg">
           <p data-i18n="review1">手机拍照真的很清晰，续航也很顶！</p>
-          <!-- <span class="block mt-4 font-bold" data-i18n="userA">Mac***ta</span> -->
-          <span class="block mt-4 font-bold" data-i18n="user000">Mac***ta</span>
+           <span class="block mt-4 font-bold" data-i18n="userA">Mac***ta</span> -->
+          <!-- <span class="block mt-4 font-bold" data-i18n="user000">Mac***ta</span>
         </div>
         <div class="p-6 bg-white shadow rounded-lg">
           <p data-i18n="review2">游戏很流畅，一点不卡顿。</p>
@@ -181,7 +182,90 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --> 
+
+<!-- 用户评价 -->
+<section id="reviews" class="bg-gray-50 py-16">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10" data-i18n="feedback">用户评价</h2>
+    <div class="overflow-hidden">
+      <div class="flex space-x-8 animate-scroll">
+        <!-- 这里是评论 -->
+        <div class="p-6 bg-white shadow rounded-lg w-80 flex-shrink-0">
+          <p data-i18n="review1">手机拍照真的很清晰，续航也很顶！</p>
+          <span class="block mt-4 font-bold" data-i18n="00">Mac***ta</span>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg w-80 flex-shrink-0">
+          <p data-i18n="review2">游戏很流畅，一点不卡顿。</p>
+          <span class="block mt-4 font-bold" data-i18n="00">Tem**on@gmail.com</span>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg w-80 flex-shrink-0">
+          <p data-i18n="review3">外观非常惊艳，质感很好。</p>
+          <span class="block mt-4 font-bold" data-i18n="00">Pot*no</span>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg w-80 flex-shrink-0">
+          <p data-i18n="review4">性能很强，玩游戏很爽！</p>
+          <span class="block mt-4 font-bold" data-i18n="00">Jo**oe</span>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg w-80 flex-shrink-0">
+          <p data-i18n="review5">质量非常好，值得推荐。</p>
+          <span class="block mt-4 font-bold" data-i18n="00">Fs**et@gmail.com</span>
+        </div>
+
+        <!-- 复制以上评论，保证循环 -->
+        <div class="p-6 bg-white shadow rounded-lg w-80 flex-shrink-0">
+          <p data-i18n="review1">手机拍照真的很清晰，续航也很顶！</p>
+          <span class="block mt-4 font-bold" data-i18n="00">Mac***ta</span>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg w-80 flex-shrink-0">
+          <p data-i18n="review2">游戏很流畅，一点不卡顿。</p>
+          <span class="block mt-4 font-bold" data-i18n="00">Tem**on@gmail.com</span>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg w-80 flex-shrink-0">
+          <p data-i18n="review3">外观非常惊艳，质感很好。</p>
+          <span class="block mt-4 font-bold" data-i18n="00">Pot*no</span>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg w-80 flex-shrink-0">
+          <p data-i18n="review4">性能很强，玩游戏很爽！</p>
+          <span class="block mt-4 font-bold" data-i18n="00">Jo**oe</span>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg w-80 flex-shrink-0">
+          <p data-i18n="review5">质量非常好，值得推荐。</p>
+          <span class="block mt-4 font-bold" data-i18n="00">Fs**et@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 下面是CSS样式 -->
+<style>
+  .animate-scroll {
+    display: flex; /* 评论框水平排列 */
+    animation: scroll 20s linear infinite; /* 动画控制 */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* 起始位置 */
+    }
+    100% {
+      transform: translateX(-100%); /* 滚动到最左边 */
+    }
+  }
+
+  /* 固定评论框的大小 */
+  .w-80 {
+    width: 320px; /* 固定宽度 */
+  }
+
+  /* 确保评论框不会缩小 */
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+</style>
+<!-- 用户评价 -->
+
 
   <!-- 页脚 -->
   <footer id="contact" class="bg-gray-900 text-white py-10">
