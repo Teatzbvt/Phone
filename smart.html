@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">旗舰手机独立站</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    const translations = {
+    zh: {rights1:"© 2025 成海外贸科技. 保留所有权利.",processor2:"其他",processor1:"旗舰芯片",feature4:"超大电池 + 快充",feature3:"超清AMOLED屏幕",feature2:"旗舰级处理器",feature1:"专业级影像系统",title:"旗舰手机独立站", home:"首页", product:"产品", features:"功能", specs:"参数", reviews:"测评", contact:"联系我们", buy:"立即购买", heroTitle:"超越旗舰 · 全新定义性能手机", heroDesc:"极致性能 · 超长续航 · 专业影像", showcase:"产品展示", highlights:"核心功能亮点", parameters:"技术参数", feedback:"用户评价", contactus:"联系我们", aboutus:"关于我们", follow:"关注我们", processor:"处理器", battery:"电池", screen:"屏幕", model:"本机型", competitor:"竞品", review1:"手机拍照真的很清晰，续航也很顶！", review2:"游戏很流畅，一点不卡顿。", review3:"外观非常惊艳，质感很好。", userA:"用户A", userB:"用户B", userC:"用户C", email:"邮箱: zb1209vt@gmail.com", wechat:"微信: +8618315033145", footerDesc:"工厂直销 · 全新正品 · 全球发货" },
+    en: {rights1:" © 2025 Chenghai Foreign Trade Technology. All rights reserved.",processor2:"Others",processor1:"Flagship Chip",feature4:"Large Battery + Fast Charging",feature3:"Ultra-clear AMOLED Display",feature2:"Flagship Processor",feature1:"Professional-grade Imaging System",title:"Flagship Phone Store", home:"Home", product:"Product", features:"Features", specs:"Specs", reviews:"Reviews", contact:"Contact", buy:"Buy Now", heroTitle:"Beyond Flagship · Redefining Performance", heroDesc:"Extreme performance · Long-lasting battery · Pro Camera", showcase:"Product Showcase", highlights:"Key Features", parameters:"Technical Specs", feedback:"User Reviews", contactus:"Contact Us", aboutus:"About Us", follow:"Follow Us", processor:"Processor", battery:"Battery", screen:"Screen", model:"This Model", competitor:"Competitor", review1:"The camera is super clear, and the battery lasts great!", review2:"Games run smoothly, no lag at all.", review3:"The design is stunning, very premium.", userA:"User A", userB:"User B", userC:"User C", email:"Email: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"Factory direct · Brand new · Global shipping" },
+    es: {rights1:" © 2025 Chenghai Foreign Trade Technology. Todos los derechos reservados.",processor2:"Otros",processor1:"Chip insignia",feature4:"Batería de gran capacidad + Carga rápida",feature3:"Pantalla AMOLED ultra clara",feature2:"Procesador insignia",feature1:"Sistema de imagen de nivel profesional",title:"Teléfono Insignia", home:"Inicio", product:"Producto", features:"Funciones", specs:"Especificaciones", reviews:"Reseñas", contact:"Contacto", buy:"Comprar Ahora", heroTitle:"Más allá del flagship · Redefiniendo el rendimiento", heroDesc:"Rendimiento extremo · Batería duradera · Cámara profesional", showcase:"Exposición del producto", highlights:"Características clave", parameters:"Especificaciones técnicas", feedback:"Opiniones de usuarios", contactus:"Contáctenos", aboutus:"Sobre nosotros", follow:"Síguenos", processor:"Procesador", battery:"Batería", screen:"Pantalla", model:"Este modelo", competitor:"Competidor", review1:"La cámara es muy clara y la batería dura mucho.", review2:"Los juegos funcionan fluidos, sin retraso.", review3:"El diseño es impresionante, muy elegante.", userA:"Usuario A", userB:"Usuario B", userC:"Usuario C", email:"Correo: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"Fábrica directa · Nuevo · Envío global"},
+    fr: {rights1:" © 2025 Chenghai Foreign Trade Technology. Tous droits réservés.",processor2:"Autres",processor1:"Puce phare",feature4:"Grande batterie + Charge rapide",feature3:"Écran AMOLED ultra clair",feature2:"Processeur phare",feature1:"Système d’imagerie de niveau professionnel",title:"Téléphone Phare", home:"Accueil", product:"Produit", features:"Fonctionnalités", specs:"Spécifications", reviews:"Avis", contact:"Contact", buy:"Acheter", heroTitle:"Au-delà du flagship · Redéfinir la performance", heroDesc:"Performance extrême · Batterie longue durée · Caméra pro", showcase:"Présentation du produit", highlights:"Points forts", parameters:"Spécifications techniques", feedback:"Avis utilisateurs", contactus:"Contactez-nous", aboutus:"À propos", follow:"Suivez-nous", processor:"Processeur", battery:"Batterie", screen:"Écran", model:"Ce modèle", competitor:"Concurrent", review1:"La caméra est très claire, et la batterie tient bien.", review2:"Les jeux sont fluides, aucun lag.", review3:"Le design est magnifique, très premium.", userA:"Utilisateur A", userB:"Utilisateur B", userC:"Utilisateur C", email:"Email: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"Vente directe · Neuf · Livraison mondiale"},
+    de: {rights1:" © 2025 Chenghai Foreign Trade Technology. Alle Rechte vorbehalten.",processor2:"Andere",processor1:"Flaggschiff-Chip",feature4:"Großer Akku + Schnellladung",feature3:"Ultraklares AMOLED-Display",feature2:"Flaggschiff-Prozessor",feature1:"Professionelles Bildgebungssystem",title:"Flaggschiff Smartphone", home:"Startseite", product:"Produkt", features:"Funktionen", specs:"Technische Daten", reviews:"Bewertungen", contact:"Kontakt", buy:"Jetzt kaufen", heroTitle:"Über das Flaggschiff hinaus · Leistung neu definiert", heroDesc:"Extreme Leistung · Lange Akkulaufzeit · Pro Kamera", showcase:"Produktpräsentation", highlights:"Hauptmerkmale", parameters:"Technische Daten", feedback:"Kundenbewertungen", contactus:"Kontaktieren Sie uns", aboutus:"Über uns", follow:"Folgen Sie uns", processor:"Prozessor", battery:"Akku", screen:"Bildschirm", model:"Dieses Modell", competitor:"Konkurrent", review1:"Die Kamera ist sehr klar und der Akku hält lange.", review2:"Spiele laufen flüssig, ohne Verzögerung.", review3:"Das Design ist beeindruckend und sehr hochwertig.", userA:"Benutzer A", userB:"Benutzer B", userC:"Benutzer C", email:"Email: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"Direkt ab Werk · Neu · Weltweiter Versand"},
+    ja: {rights1:" © 2025 成海外贸科技. 無断複製を禁じます。",processor2:"その他",processor1:"フラッグシップチップ",feature4:"大容量バッテリー + 急速充電",feature3:"超高精細AMOLEDディスプレイ",feature2:"フラッグシッププロセッサー",feature1:"プロフェッショナルグレード映像システム",title:"フラッグシップスマホ", home:"ホーム", product:"製品", features:"機能", specs:"仕様", reviews:"レビュー", contact:"お問い合わせ", buy:"今すぐ購入", heroTitle:"フラッグシップを超えて · 性能を再定義", heroDesc:"極限の性能 · 長時間バッテリー · プロカメラ", showcase:"製品ショーケース", highlights:"主な特徴", parameters:"技術仕様", feedback:"ユーザーレビュー", contactus:"お問い合わせ", aboutus:"私たちについて", follow:"フォローしてください", processor:"プロセッサ", battery:"バッテリー", screen:"画面", model:"本モデル", competitor:"競合", review1:"カメラはとても鮮明で、バッテリーも長持ちします。", review2:"ゲームはスムーズで遅延なし。", review3:"デザインは素晴らしく、高級感があります。", userA:"ユーザーA", userB:"ユーザーB", userC:"ユーザーC", email:"メール: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"工場直販 · 新品 · 世界配送"},
+    ko: {rights1:" © 2025 成海外贸科技. 판권 소유.",processor2:"기타",processor1:"플래그십 칩",feature4:"대용량 배터리 + 고속 충전",feature3:"초고화질 AMOLED 디스플레이",feature2:"플래그십 프로세서",feature1:"전문급 영상 시스템",title:"플래그십 스마트폰", home:"홈", product:"제품", features:"기능", specs:"사양", reviews:"리뷰", contact:"문의하기", buy:"지금 구매", heroTitle:"플래그십을 넘어 · 성능의 재정의", heroDesc:"극한의 성능 · 오래가는 배터리 · 프로 카메라", showcase:"제품 쇼케이스", highlights:"주요 기능", parameters:"기술 사양", feedback:"사용자 리뷰", contactus:"문의하기", aboutus:"회사 소개", follow:"팔로우", processor:"프로세서", battery:"배터리", screen:"화면", model:"이 모델", competitor:"경쟁 제품", review1:"카메라는 매우 선명하고 배터리가 오래갑니다.", review2:"게임은 부드럽게 실행되며 지연이 없습니다.", review3:"디자인이 놀랍고 고급스럽습니다.", userA:"사용자A", userB:"사용자B", userC:"사용자C", email:"이메일: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"공장 직송 · 신제품 · 전 세계 배송"},
+    ru: {rights1:" © 2025 Chenghai Foreign Trade Technology. Все права защищены.",processor2:"Другое",processor1:"Флагманский чип",feature4:"Большой аккумулятор + Быстрая зарядка",feature3:"Ультра-чёткий AMOLED-дисплей",feature2:"Флагманский процессор",feature1:"Профессиональная система визуализации",title:"Флагманский смартфон", home:"Главная", product:"Продукт", features:"Функции", specs:"Характеристики", reviews:"Отзывы", contact:"Контакты", buy:"Купить", heroTitle:"За пределами флагмана · Новое определение производительности", heroDesc:"Экстремальная производительность · Долгая батарея · Про-камера", showcase:"Демонстрация продукта", highlights:"Ключевые особенности", parameters:"Технические характеристики", feedback:"Отзывы пользователей", contactus:"Свяжитесь с нами", aboutus:"О нас", follow:"Подписывайтесь", processor:"Процессор", battery:"Батарея", screen:"Экран", model:"Эта модель", competitor:"Конкурент", review1:"Камера очень четкая, батарея долго держит заряд.", review2:"Игры идут плавно, без лагов.", review3:"Дизайн потрясающий, премиум-класс.", userA:"Пользователь A", userB:"Пользователь B", userC:"Пользователь C", email:"Email: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"Прямая поставка с завода · Новый · Доставка по всему миру" },
+    ar: {rights1:" © 2025 شركة تشنغهاي للتجارة الخارجية والتكنولوجيا. جميع الحقوق محفوظة.",processor2:"أخرى",processor1:"شريحة رائدة",feature4:"بطارية كبيرة + شحن سريع",feature3:"شاشة AMOLED فائقة الوضوح",feature2:"معالج رائد",feature1:" نظام تصوير احترافي المستوى",title:"هاتف رائد", home:"الرئيسية", product:"المنتج", features:"الميزات", specs:"المواصفات", reviews:"المراجعات", contact:"اتصل بنا", buy:"اشتر الآن", heroTitle:"ما بعد الرائد · إعادة تعريف الأداء", heroDesc:"أداء قوي · بطارية طويلة الأمد · كاميرا احترافية", showcase:"عرض المنتج", highlights:"أهم الميزات", parameters:"المواصفات التقنية", feedback:"مراجعات المستخدمين", contactus:"اتصل بنا", aboutus:"معلومات عنا", follow:"تابعنا", processor:"المعالج", battery:"البطارية", screen:"الشاشة", model:"هذا الطراز", competitor:"المنافس", review1:"الكاميرا واضحة جدًا والبطارية تدوم طويلاً.", review2:"الألعاب سلسة بدون أي تأخير.", review3:"التصميم مذهل وراقي جدًا.", userA:"المستخدم أ", userB:"المستخدم ب", userC:"المستخدم ج", email:"البريد الإلكتروني: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"مباشرة من المصنع · جديد · شحن عالمي" },
+    pt: {rights1:" © 2025 Chenghai Foreign Trade Technology. Todos os direitos reservados.",processor2:"Outros",processor1:"Chip principal",feature4:"Bateria de grande capacidade + Carregamento rápido",feature3:"Ecrã AMOLED ultranítido / Tela AMOLED ultranítida (葡萄牙和巴西可稍有不同)",feature2:"Processador principal",feature1:"Sistema de imagem de nível profissional",title:"Smartphone Topo de Linha", home:"Início", product:"Produto", features:"Recursos", specs:"Especificações", reviews:"Avaliações", contact:"Contato", buy:"Comprar Agora", heroTitle:"Além do Flagship · Redefinindo o desempenho", heroDesc:"Desempenho extremo · Bateria duradoura · Câmera Pro", showcase:"Vitrine do produto", highlights:"Principais recursos", parameters:"Especificações técnicas", feedback:"Avaliações de usuários", contactus:"Contate-nos", aboutus:"Sobre nós", follow:"Siga-nos", processor:"Processador", battery:"Bateria", screen:"Tela", model:"Este modelo", competitor:"Concorrente", review1:"A câmera é muito clara e a bateria dura muito.", review2:"Os jogos funcionam sem atrasos.", review3:"O design é impressionante, muito premium.", userA:"Usuário A", userB:"Usuário B", userC:"Usuário C", email:"Email: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"Direto da fábrica · Novo · Envio global"},
+    it: {rights1:" © 2025 Chenghai Foreign Trade Technology. Tutti i diritti riservati.",processor2:"Altri",processor1:"Chip di punta",feature4:"Batteria di grande capacità + Ricarica rapida",feature3:"Display AMOLED ultra nitido",feature2:"Processore di punta",feature1:"Sistema di imaging di livello professionale",title:"Smartphone di punta", home:"Home", product:"Prodotto", features:"Funzioni", specs:"Specifiche", reviews:"Recensioni", contact:"Contatti", buy:"Acquista ora", heroTitle:"Oltre il Flagship · Ridefinire le prestazioni", heroDesc:"Prestazioni estreme · Batteria duratura · Fotocamera Pro", showcase:"Vetrina del prodotto", highlights:"Caratteristiche principali", parameters:"Specifiche tecniche", feedback:"Recensioni degli utenti", contactus:"Contattaci", aboutus:"Chi siamo", follow:"Seguici", processor:"Processore", battery:"Batteria", screen:"Schermo", model:"Questo modello", competitor:"Concorrente", review1:"La fotocamera è molto chiara e la batteria dura a lungo.", review2:"I giochi girano fluidi, senza lag.", review3:"Il design è bellissimo e molto premium.", userA:"Utente A", userB:"Utente B", userC:"Utente C", email:"Email: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"Diretto dalla fabbrica · Nuovo · Spedizione globale"},
+    nl: {rights1:" © 2025 Chenghai Foreign Trade Technology. Alle rechten voorbehouden.",processor2:"Overige",processor1:"Vlaggenschipchip",feature4:"Grote batterij + Snelladen",feature3:"Ultraduidelijk AMOLED-scherm",feature2:"Vlaggenschip-processor",feature1:"Professioneel beeldvormingssysteem",title:"Vlaggenschip Smartphone", home:"Startpagina", product:"Product", features:"Functies", specs:"Specificaties", reviews:"Beoordelingen", contact:"Contact", buy:"Koop nu", heroTitle:"Voorbij de vlaggenschip · Prestaties opnieuw gedefinieerd", heroDesc:"Extreme prestaties · Lange batterijduur · Pro-camera", showcase:"Productpresentatie", highlights:"Belangrijkste kenmerken", parameters:"Technische specificaties", feedback:"Gebruikersrecensies", contactus:"Neem contact op", aboutus:"Over ons", follow:"Volg ons", processor:"Processor", battery:"Batterij", screen:"Scherm", model:"Dit model", competitor:"Concurrent", review1:"De camera is erg duidelijk en de batterij gaat lang mee.", review2:"Games draaien soepel zonder vertraging.", review3:"Het ontwerp is verbluffend, zeer premium.", userA:"Gebruiker A", userB:"Gebruiker B", userC:"Gebruiker C", email:"Email: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"Rechtstreeks uit fabriek · Nieuw · Wereldwijde verzending" },
+    hi: {rights1:" © 2025 चेंगहाई विदेशी व्यापार प्रौद्योगिकी. सर्वाधिकार सुरक्षित।",processor2:"अन्य",processor1:"फ़्लैगशिप चिप",feature4:"बड़ी बैटरी + फास्ट चार्जिंग",feature3:"अल्ट्रा-क्लियर AMOLED डिस्प्ले",feature2:"फ़्लैगशिप प्रोसेसर",feature1:" व्यावसायिक-स्तरीय इमेजिंग प्रणाली",title:"फ्लैगशिप स्मार्टफोन", home:"होम", product:"उत्पाद", features:"विशेषताएँ", specs:"विशेष विवरण", reviews:"समीक्षाएँ", contact:"संपर्क", buy:"अभी खरीदें", heroTitle:"फ्लैगशिप से परे · प्रदर्शन को पुनर्परिभाषित करना", heroDesc:"अत्यधिक प्रदर्शन · लंबी बैटरी · प्रो कैमरा", showcase:"उत्पाद प्रदर्शन", highlights:"मुख्य विशेषताएँ", parameters:"तकनीकी विनिर्देश", feedback:"उपयोगकर्ता समीक्षाएँ", contactus:"संपर्क करें", aboutus:"हमारे बारे में", follow:"हमें फॉलो करें", processor:"प्रोसेसर", battery:"बैटरी", screen:"स्क्रीन", model:"यह मॉडल", competitor:"प्रतिस्पर्धी", review1:"कैमरा बहुत स्पष्ट है और बैटरी लंबी चलती है।", review2:"गेम स्मूथ चलते हैं, कोई लैग नहीं।", review3:"डिज़ाइन शानदार है, बहुत प्रीमियम।", userA:"उपयोगकर्ता A", userB:"उपयोगकर्ता B", userC:"उपयोगकर्ता C", email:"Email: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"फैक्ट्री डायरेक्ट · नया · वैश्विक शिपिंग" },
+    th: {rights1:" © 2025 Chenghai Foreign Trade Technology. สงวนลิขสิทธิ์.",processor2:"อื่นๆ",processor1:"ชิปเรือธง",feature4:"แบตเตอรี่ขนาดใหญ่ + ชาร์จเร็ว",feature3:"หน้าจอ AMOLED ความละเอียดสูงพิเศษ",feature2:"โปรเซสเซอร์เรือธง",feature1:"ระบบถ่ายภาพระดับมืออาชีพ",title:"สมาร์ทโฟนเรือธง", home:"หน้าแรก", product:"สินค้า", features:"คุณสมบัติ", specs:"สเปค", reviews:"รีวิว", contact:"ติดต่อ", buy:"ซื้อเลย", heroTitle:"เกินกว่าเรือธง · กำหนดประสิทธิภาพใหม่", heroDesc:"ประสิทธิภาพสูงสุด · แบตเตอรี่ยาวนาน · กล้องโปร", showcase:"การแสดงสินค้า", highlights:"คุณสมบัติเด่น", parameters:"สเปคทางเทคนิค", feedback:"รีวิวผู้ใช้", contactus:"ติดต่อเรา", aboutus:"เกี่ยวกับเรา", follow:"ติดตามเรา", processor:"โปรเซสเซอร์", battery:"แบตเตอรี่", screen:"หน้าจอ", model:"รุ่นนี้", competitor:"คู่แข่ง", review1:"กล้องชัดมาก แบตเตอรี่ใช้งานได้นาน", review2:"เล่นเกมลื่นไหล ไม่มีหน่วง", review3:"ดีไซน์สวยงามมาก ระดับพรีเมียม", userA:"ผู้ใช้ A", userB:"ผู้ใช้ B", userC:"ผู้ใช้ C", email:"Email: zb1209vt@gmail.com", wechat:"WeChat: +8618315033145", footerDesc:"ส่งตรงจากโรงงาน · ใหม่ · จัดส่งทั่วโลก"},
+    vi: {rights1:" © 2025 Chenghai Foreign Trade Technology. Bảo lưu mọi quyền.",processor2:"Khác",processor1:"Chip hàng đầu",feature4:"Pin dung lượng lớn + Sạc nhanh",feature3:"Màn hình AMOLED siêu rõ nét",feature2:"Bộ xử lý hàng đầu",feature1:"Hệ thống hình ảnh cấp chuyên nghiệp",title: "Điện thoại thông minh hàng đầu", home: "Trang chủ",product: "Sản phẩm",features: "Tính năng",specs: "Thông số kỹ thuật",reviews: "Đánh giá",contact: "Liên hệ",buy: "Mua ngay",heroTitle: "Vượt xa điện thoại hàng đầu · Định nghĩa lại hiệu suất",heroDesc: "Hiệu suất cực đỉnh · Pin lâu · Camera chuyên nghiệp",showcase: "Trình diễn sản phẩm",highlights: "Đặc điểm nổi bật",parameters: "Thông số kỹ thuật",feedback: "Đánh giá của người dùng",contactus: "Liên hệ với chúng tôi",aboutus: "Về chúng tôi",follow: "Theo dõi chúng tôi",processor: "Bộ vi xử lý",battery: "Pin",screen: "Màn hình",model: "Mẫu này",competitor: "Đối thủ",review1: "Camera rất rõ nét và pin dùng được lâu.",review2: "Chơi game mượt mà, không giật lag.",review3: "Thiết kế đẹp tuyệt vời, rất cao cấp.",userA: "Người dùng A",userB: "Người dùng B",userC: "Người dùng C",email: "Email: zb1209vt@gmail.com",wechat: "WeChat: +8618315033145",footerDesc: "Trực tiếp từ nhà máy · Mới · Giao hàng toàn cầu"},
+    id: {rights1:" © 2025 Chenghai Foreign Trade Technology. Hak cipta dilindungi.",processor2:"Lainnya",processor1:"Chip unggulan",feature4:"Baterai besar + Pengisian cepat",feature3:"Layar AMOLED ultra jernih",feature2:"Prosesor unggulan",feature1:"Sistem pencitraan tingkat profesional",title: "Smartphone Unggulan",home: "Beranda",product: "Produk",features: "Fitur",specs: "Spesifikasi",reviews: "Ulasan",contact: "Kontak",buy: "Beli Sekarang",heroTitle: "Melampaui Unggulan · Kinerja Didefinisikan Ulang",heroDesc: "Kinerja Ekstrem · Baterai Tahan Lama · Kamera Pro",showcase: "Tampilan Produk",highlights: "Fitur Utama",parameters: "Spesifikasi Teknis",feedback: "Ulasan Pengguna",contactus: "Hubungi Kami",aboutus: "Tentang Kami",follow: "Ikuti Kami",processor: "Prosesor",battery: "Baterai",screen: "Layar",model: "Model ini",competitor: "Pesaing",review1: "Kamera sangat jelas dan baterai tahan lama.",review2: "Game berjalan lancar tanpa lag.",review3: "Desain menakjubkan, sangat premium.",userA: "Pengguna A",userB: "Pengguna B",userC: "Pengguna C",email: "Email: zb1209vt@gmail.com",wechat: "WeChat: +8618315033145",footerDesc: "Langsung dari pabrik · Baru · Pengiriman global"},
+    tr: {rights1:" © 2025 Chenghai Foreign Trade Technology. Tüm hakları saklıdır.",processor2:"Diğerleri",processor1:"Amiral gemisi çip",feature4:"Büyük pil + Hızlı şarj",feature3:"Ultra net AMOLED ekran",feature2:"Amiral gemisi işlemci",feature1:"Profesyonel düzeyde görüntüleme sistemi",title: "Amiral Gemisi Akıllı Telefon",home: "Ana Sayfa",product: "Ürün",features: "Özellikler",specs: "Teknik Özellikler",reviews: "İncelemeler",contact: "İletişim",buy: "Şimdi Satın Al",heroTitle: "Amiral Gemisinin Ötesinde · Performans Yeniden Tanımlandı",heroDesc: "Yüksek Performans · Uzun Pil Ömrü · Pro Kamera",showcase: "Ürün Sunumu",highlights: "Öne Çıkan Özellikler",parameters: "Teknik Parametreler",feedback: "Kullanıcı Yorumları",contactus: "Bize Ulaşın",aboutus: "Hakkımızda",follow: "Bizi Takip Edin",processor: "İşlemci",battery: "Pil",screen: "Ekran",model: "Bu model",competitor: "Rakip",review1: "Kamera çok net ve pil uzun ömürlü.",review2: "Oyunlar sorunsuz çalışıyor, gecikme yok.",review3: "Tasarım muhteşem, çok premium.",userA: "Kullanıcı A",userB: "Kullanıcı B",userC: "Kullanıcı C",email: "Email: zb1209vt@gmail.com",wechat: "WeChat: +8618315033145",footerDesc: "Fabrikadan Doğrudan · Yeni · Küresel Gönderim"},
+    ms: {rights1:" © 2025 Chenghai Foreign Trade Technology. Hak cipta terpelihara.",processor2:"Lain-lain",processor1:"Cip perdana",feature4:"Bateri besar + Pengecasan pantas",feature3:"Paparan AMOLED ultra jelas",feature2:"Pemproses perdana",feature1:"Sistem pengimejan tahap profesional",title: "Telefon Pintar Terunggul",home: "Laman Utama",product: "Produk",features: "Ciri-ciri",specs: "Spesifikasi",reviews: "Ulasan",contact: "Hubungi",buy: "Beli Sekarang",heroTitle: "Melebihi Terunggul · Prestasi Ditakrif Semula",heroDesc: "Prestasi Luar Biasa · Bateri Tahan Lama · Kamera Pro",showcase: "Paparan Produk",highlights: "Ciri-ciri Utama",parameters: "Spesifikasi Teknikal",feedback: "Ulasan Pengguna",contactus: "Hubungi Kami",aboutus: "Tentang Kami",follow: "Ikuti Kami",processor: "Pemproses",battery: "Bateri",screen: "Skrin",model: "Model ini",competitor: "Pesaing",review1: "Kamera sangat jelas dan bateri tahan lama.",review2: "Permainan berjalan lancar tanpa kelewatan.",review3: "Reka bentuk menakjubkan, sangat premium.",userA: "Pengguna A",userB: "Pengguna B",userC: "Pengguna C",email: "Email: zb1209vt@gmail.com",wechat: "WeChat: +8618315033145",footerDesc: "Terus dari kilang · Baru · Penghantaran global"},
+    he: {rights1:" © 2025 Chenghai Foreign Trade Technology. כל הזכויות שמורות.",processor2:"אחרים",processor1:"שבב דגל",feature4:"סוללה גדולה + טעינה מהירה",feature3:"תצוגת AMOLED אולטרה-ברורה",feature2:"מעבד דגל",feature1:"מערכת דימות בדרגת מקצועית",title: "סמארטפון דגל",home: "בית",product: "מוצר",features: "תכונות",specs: "מפרט טכני",reviews: "ביקורות",contact: "צור קשר",buy: "קנה עכשיו",heroTitle: "מעבר לדגל · ביצועים מוגדרים מחדש",heroDesc: "ביצועים גבוהים · סוללה ארוכה · מצלמת פרו",showcase: "הצגת מוצר",highlights: "תכונות עיקריות",parameters: "מפרטים טכניים",feedback: "ביקורות משתמשים",contactus: "צור קשר איתנו",aboutus: "עלינו",follow: "עקוב אחרינו",processor: "מעבד",battery: "סוללה",screen: "מסך",model: "דגם זה",competitor: "מתחרה",review1: "המצלמה ברורה מאוד והסוללה מחזיקה זמן רב.",review2: "משחקים רצים חלק, ללא עיכובים.",review3: "העיצוב מרשים, פרימיום מאוד.",userA: "משתמש A",userB: "משתמש B",userC: "משתמש C",email: "Email: zb1209vt@gmail.com",wechat: "WeChat: +8618315033145",footerDesc: "ישירות מהמפעל · חדש · משלוח עולמי"},
+    pl: {rights1:" © 2025 Chenghai Foreign Trade Technology. Wszelkie prawa zastrzeżone.",processor2:"Inne",processor1:"Układ flagowy",feature4:"Duża bateria + Szybkie ładowanie",feature3:"Ultraprzejrzysty wyświetlacz AMOLED",feature2:"Procesor flagowy",feature1:"Profesjonalny system obrazowania",title: "Smartfon Flagowy",home: "Strona główna",product: "Produkt",features: "Funkcje",specs: "Specyfikacje",reviews: "Opinie",contact: "Kontakt",buy: "Kup Teraz",heroTitle: "Ponad flagowym · Wydajność na nowo zdefiniowana",heroDesc: "Ekstremalna wydajność · Długa żywotność baterii · Kamera Pro",showcase: "Prezentacja Produktu",highlights: "Najważniejsze cechy",parameters: "Specyfikacje techniczne",feedback: "Opinie użytkowników",contactus: "Skontaktuj się z nami",aboutus: "O nas",follow: "Śledź nas",processor: "Procesor",battery: "Bateria",screen: "Ekran",model: "Ten model",competitor: "Konkurent",review1: "Aparat jest bardzo wyraźny, a bateria długo działa.",review2: "Gry działają płynnie, bez opóźnień.",review3: "Projekt oszałamiający, bardzo premium.",userA: "Użytkownik A",userB: "Użytkownik B",userC: "Użytkownik C",email: "Email: zb1209vt@gmail.com",wechat: "WeChat: +8618315033145",footerDesc: "Bezpośrednio z fabryki · Nowy · Wysyłka światowa"} 
+ // 其余语言同样结构... (de, ja, ko, ru, ar, pt, it, nl, hi, th, vi, id, tr, ms, he, pl)
+    };
+
+    function switchLang(lang) {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        let key = el.getAttribute("data-i18n");
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+    }
+  </script>
+
+</head>
+<body class="bg-white text-gray-800">
+  <!-- 顶部导航栏 -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold">© 2025</div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-blue-600" data-i18n="home">首页</a>
+        <a href="#product" class="hover:text-blue-600" data-i18n="product">产品</a>
+        <a href="#features" class="hover:text-blue-600" data-i18n="features">功能</a>
+        <a href="#specs" class="hover:text-blue-600" data-i18n="specs">参数</a>
+        <a href="#reviews" class="hover:text-blue-600" data-i18n="reviews">测评</a>
+        <a href="#contact" class="hover:text-blue-600" data-i18n="contact">联系我们</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <select onchange="switchLang(this.value)" class="border px-2 py-1 rounded text-sm">
+          <option value="zh">中文</option>
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="ru">Русский</option>
+          <option value="ar">العربية</option>
+          <option value="pt">Português</option>
+          <option value="it">Italiano</option>
+          <option value="nl">Nederlands</option>
+          <option value="hi">हिन्दी</option>
+          <option value="th">ไทย</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="tr">Türkçe</option>
+          <option value="ms">Bahasa Melayu</option>
+          <option value="he">עברית</option>
+          <option value="pl">Polski</option>
+        </select>
+        <div id="paypal-container-FDNC7X9NAHA7S"></div>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg"  onclick="window.open('https://www.paypal.com/ncp/payment/FDNC7X9NAHA7S', '_blank')" data-i18n="buy">立即购买</button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- 首页视频 -->
+  <section id="home" class="pt-24 bg-gray-100">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center p-6">
+      <div class="flex-1">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4" data-i18n="heroTitle">超越旗舰 · 全新定义性能手机</h1>
+        <p class="text-lg mb-6" data-i18n="heroDesc">极致性能 · 超长续航 · 专业影像</p>
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg" onclick="window.open('https://www.paypal.com/ncp/payment/FDNC7X9NAHA7S', '_blank')"  data-i18n="buy">立即购买</button>
+      
+      </div>
+      <div class="flex-1 mt-6 md:mt-0">
+        <video autoplay muted loop playsinline class="rounded-xl shadow-lg w-full">
+          <source src="25.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品展示 -->
+  <section id="product" class="py-16">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10" data-i18n="showcase">产品展示</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <img src="25-1.jpg" alt="" class="mx-auto rounded-lg shadow">
+        <img src="25-2.jpg" alt="" class="mx-auto rounded-lg shadow">
+        <img src="25-3.jpg" alt="" class="mx-auto rounded-lg shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- 功能亮点 -->
+  <section id="features" class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10" data-i18n="highlights">核心功能亮点</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div><p data-i18n="feature1">专业级影像系统</p></div>
+        <div><p data-i18n="feature2">旗舰级处理器</p></div>
+        <div><p data-i18n="feature3">超清AMOLED屏幕</p></div>
+        <div><p data-i18n="feature4">超大电池 + 快充</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 参数对比 -->
+  <section id="specs" class="py-16">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10" data-i18n="parameters">技术参数</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full text-left border">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 border" data-i18n="parameters">参数</th>
+              <th class="px-4 py-2 border" data-i18n="model">本机型</th>
+              <th class="px-4 py-2 border" data-i18n="competitor">竞品</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="px-4 py-2 border" data-i18n="processor">处理器</td>
+              <td class="px-4 py-2 border" data-i18n="processor1">旗舰芯片</td>
+              <td class="px-4 py-2 border" data-i18n="processor2">其他</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border" data-i18n="battery">电池</td>
+              <td class="px-4 py-2 border">5000mAh</td>
+              <td class="px-4 py-2 border">4200mAh</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border" data-i18n="screen">屏幕</td>
+              <td class="px-4 py-2 border">6.7" AMOLED</td>
+              <td class="px-4 py-2 border">LCD</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section id="reviews" class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10" data-i18n="feedback">用户评价</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white shadow rounded-lg">
+          <p data-i18n="review1">手机拍照真的很清晰，续航也很顶！</p>
+          <!-- <span class="block mt-4 font-bold" data-i18n="userA">Mac***ta</span> -->
+          <span class="block mt-4 font-bold" data-i18n="user000">Mac***ta</span>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <p data-i18n="review2">游戏很流畅，一点不卡顿。</p>
+          <span class="block mt-4 font-bold" data-i18n="user000">Tem**on@gmail.com</span>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <p data-i18n="review3">外观非常惊艳，质感很好。</p>
+          <span class="block mt-4 font-bold" data-i18n="user000">Pot*no</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer id="contact" class="bg-gray-900 text-white py-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-bold mb-4" data-i18n="contactus">联系我们</h3>
+        <p data-i18n="email">邮箱: zb1209vt@gmail.com</p>
+        <p data-i18n="wechat">微信: +8618315033145</p>
+        <p data-i18n="WathsApp">WathsApp: +8618315033145</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4" data-i18n="aboutus">关于我们</h3>
+        <p data-i18n="footerDesc">工厂直销 · 全新正品 · 全球发货</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4" data-i18n="follow">关注我们</h3>
+        <!--<p>TikTok / YouTube</p>-->
+         <img src="11.png" alt="" class="mx-auto rounded-lg shadow">
+      </div>
+    </div>
+    <p class="text-center mt-8 text-gray-400" data-i18n="rights1">© 2025 成海外贸科技. 保留所有权利.</p>
+  </footer>
+</body>
+</html>
